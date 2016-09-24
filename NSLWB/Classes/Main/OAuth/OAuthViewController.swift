@@ -63,7 +63,7 @@ extension OAuthViewController {
     @objc private func fillTextClick() {
         print("填充")
         // 1.书写js代码 : javascript / java --> 雷锋和雷峰塔
-        let jsCode = "document.getElementById('userId').value='在这里填写账号';document.getElementById('passwd').value='在这里填写密码';"
+        let jsCode = "document.getElementById('userId').value='账号';document.getElementById('passwd').value='密码';"
         // 2.执行js代码
         webView.stringByEvaluatingJavaScriptFromString(jsCode)
     }
